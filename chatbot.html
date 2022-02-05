@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chat</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+<link rel="stylesheet" type="text/css" href="/CSS/chatbox.css">
+
+
+<!-- ChatBot -->
+<link rel="stylesheet" type="text/css" href="/CSS/jquery.convform.css">
+<script type="text/javascript" src="/JS/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="/JS/jquery.convform.js"></script>
+<script type="text/javascript" src="/JS/custom.js"></script>
+
+</head>
+<body>
+<!-- ChatBot -->
+<div class="chat_icon">
+	<i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+
+<div class="chat_box">
+	<div class="my-conv-form-wrapper">
+		<form action="" method="GET" class="hidden">
+
+      <select data-conv-question="Hello, Asha!" name="category">
+        <option value="Hey"> Hey, Prashant!</option>
+      </select>
+
+      <div data-conv-fork="category">
+        <div data-conv-case="Hey">
+          <select data-conv-question="How are you, Asha?" name="category">
+            <option value="Good">Good</option>
+            <option value="Not">Not Good.</option>
+          </select>  
+
+          <div data-conv-fork="category">
+            
+            <!--------- Good --------->
+            <div data-conv-case="Good">
+              <select data-conv-question="That's great! Wish you very Happy Birthday!" name="category">
+                <option value="prashant">Thanks. How are you, Prashant?</option>
+              </select>   
+
+              <div data-conv-fork="category">
+                <div data-conv-case="prashant"> 
+                  <select data-conv-question="I am also doing good." name="category">
+                    <option value="nice">That's nice!</option>
+                  </select> 
+                  <div data-conv-fork="category">
+                    <div data-conv-case="nice">
+                      <select data-conv-question="Maa, chhoti and Papa kaise hai?" name="category">
+                        <option value="fine">All are fine!</option>
+                      </select>
+                      
+                      <div data-conv-fork="category">
+                        <div data-conv-case="fine">
+                          <select data-conv-question="Ok. Ah. It has been long time, we talked. It's almost 9 months, isn't it?" name="category">
+                            <option value="yes">Yeah!</option>
+                          </select> 
+                        </div>
+                        <div data-conv-fork="category">
+                          <div data-conv-case="yes">
+                            <input type="text" name="companyName" data-conv-question="You remember that days when we used to take tea, lunch, shopping together. That was so wonderful days. Isn't it?">    
+                            <input type="text" name="name" data-conv-question="I loved that memories which we spend.">
+                            <input type="text" name="name" data-conv-question="Hope we meet again and create new wonderful memories.">
+                            <input type="text" name="name" data-conv-question="Ok, Asha. It's a pleasure to talk with you.">
+                            <input type="text" name="name" data-conv-question="Okay, bye. Take care. Stay safe, stay happy and stay healthy. Have a wonderful days ahead! ">
+                            
+                          </div> 
+                           
+                        </div>  
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+              </div> 
+            </div>
+
+            <!---------- Not Good ---------->
+            <div data-conv-case="Not" data-conv-fork="first-question2">
+              <input type="text" name="companyName" data-conv-question="What happened?"> 
+              <input type="text" name="companyName" data-conv-question="Okay. Take rest. Everything will be good soon."> 
+              <input type="text" name="companyName" data-conv-question="Okay. Take care. Bye. See you soon."> 
+            </div>
+          </div>
+
+        </div> 
+      </div>
+      <select data-conv-question="If you wanna talk to me. Just call me or mail me." name="category">
+        <option value="call">Call</option>
+        <option value="mail">Mail</option>
+      </select> 
+      <div data-conv-fork="category">
+        <div data-conv-case="call">
+          <input type="text" name="domainName" data-conv-question="+91 9810682285">    
+        </div>
+        <div data-conv-case="mail" data-conv-fork="first-question2">
+          <input type="text" name="companyName" data-conv-question="pashupati0321@gmail.com"> 
+        </div>
+      </div>  
+      <select data-conv-question="Please close it!">
+        <option value="Yes">Close</option>
+      </select>
+
+  	</form>
+	</div>
+</div>
+<!-- ChatBot end -->
+
+
+
+</body>
+</html>
