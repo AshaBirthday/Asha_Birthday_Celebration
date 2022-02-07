@@ -1,0 +1,27 @@
+li a{
+    color: #333;
+}
+.big-text
+{
+    font-size: 40px;
+    margin: 350px 0;
+    color: darkred;
+}
+a.btn{
+    margin: 30px 10px;
+    width: 150px;
+    padding: 10px;
+    border-radius:20px;
+}
+a.btn-first
+{
+    background-color: blue;
+    color: #fff;
+}
+a.btn:hover{
+    background: blue;
+    border: none;
+    color: #fff;
+    box-shadow: 5px 5px 10px #999;
+    transition: 0.3s;
+}

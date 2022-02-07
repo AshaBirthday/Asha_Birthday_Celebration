@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Josefin Slab", serif;
+}
+#back_vdo
+{
+    position: relative;
+}
+
+#back_vdo video{
+    height: 100vh;
+    width: 100%;
+    background-position:absolute;
+    z-index:10;
+    object-fit: cover;
+}
+
+#back_vdo .content {
+background-color: rgba(0, 0, 0, 0.5);
+height: 100vh;
+width:100%;
+z-index:20;
+position: absolute;
+top:0px;
+left:0px;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/*-----------------Card css-----------------------*/
+.card {
+    width: 320px;
+    height: 380px;
+    border-radius: 20px;
+    position:relative;
+    perspective: 1000px;
+    padding: 0px;
+    background-color: thistle;
+}
+.card1 {
+    width: 460px;
+    height: 600px;
+    border-radius: 20px;
+    position:relative;
+    perspective: 1000px;
+    background-color: white;
+}
+.card2 {
+    width: 320px;
+    height: 380px;
+    /* margin: 80px; */
+    border-radius: 20px;
+    position:relative;
+    background-color: lightblue;
+    perspective: 1000px;
+}
+
+.left-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: linear-gradient(rgba(0, 0, 0 , 0.5), rgba(0, 0, 0, 0.6)), url(/Images/doreamon/17.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: 0;
+    width: 50%;
+    height: 100%;
+    transform:rotateY(0deg);
+    transform-origin: left;
+    transition:transform 1s;
+}
+
+.right-side {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: linear-gradient(rgba(0, 0, 0 , 0.5), rgba(0, 0, 0, 0.6)), url(/Images/doreamon/17.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: -180px;
+    width: 50%;
+    height: 100%;
+    transform:rotateY(0deg);
+    transform-origin: right;
+    transition:transform 1s;
+}
+
+.left-side1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: linear-gradient(rgba(0, 0, 0 , 0.4), rgba(0, 0, 0, 0.5)), url(/Images/doreamon/7-1.png) center no-repeat;
+    background-size: cover;
+    background-position-x: 0;
+    width: 50%;
+    height: 100%;
+    transform:rotateY(0deg);
+    transform-origin: left;
+    transition:transform 1s;
+}
+
+.right-side1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: linear-gradient(rgba(0, 0, 0 , 0.4), rgba(0, 0, 0, 0.5)), url(/Images/doreamon/7-1.png) center no-repeat;
+    background-size: cover;
+    background-position-x: -180px;
+    width: 50%;
+    height: 100%;
+    transform:rotateY(0deg);
+    transform-origin: right;
+    transition:transform 1s;
+}
+.left-side2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: linear-gradient(rgba(0, 0, 0 , 0.5), rgba(0, 0, 0, 0.6)), url(/Images/img/16.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: 0;
+    width: 50%;
+    height: 100%;
+    transform:rotateY(0deg);
+    transform-origin: left;
+    transition:transform 1s;
+}
+
+.right-side2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: linear-gradient(rgba(0, 0, 0 , 0.5), rgba(0, 0, 0, 0.6)), url(/Images/img/16.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: -180px;
+    width: 50%;
+    height: 100%;
+    transform:rotateY(0deg);
+    transform-origin: right;
+    transition:transform 1s;
+}
+
+.back-side {
+    position: absolute;
+    top: 0;
+    left: 0;   
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: linear-gradient(rgba(0, 0, 0 , 0.2), rgba(0, 0, 0, 0.2)), url(/Images/6.jpg) center no-repeat;
+    background-size: cover;
+    z-index: -1;
+    transform: translateZ(-300px);
+    box-shadow: 40px 40px 80px #000;
+    transition: z-index 0.4s step-end, transform 1s, box-shadow 1s;
+}
+.back-side1 {
+    position: absolute;
+    top: 0;
+    left: 0;   
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: linear-gradient(rgba(0, 0, 0 , 0.1), rgba(0, 0, 0, 0.1)), url(/Images/2.jpeg) center no-repeat;
+    background-size: cover;
+    z-index: -1;
+    transform: translateZ(-300px);
+    box-shadow: 40px 40px 80px #000;
+    transition: z-index 0.4s step-end, transform 1s, box-shadow 1s;
+}
+.back-side2 {
+    position: absolute;
+    top: 0;
+    left: 0;   
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: linear-gradient(rgba(0, 0, 0 , 0.2), rgba(0, 0, 0, 0.2)), url(/Images/36\ \(2\).jpg) center no-repeat;
+    background-size: cover;
+    z-index: -1;
+    transform: translateZ(-300px);
+    box-shadow: 40px 40px 80px #000;
+    transition: z-index 0.4s step-end, transform 1s, box-shadow 1s;
+}
+
+/*-----------Card Hover------------------*/
+.card:hover .left-side, .card1:hover .left-side1, .card2:hover .left-side2 {
+    transform: rotateY(-360deg);
+}
+
+.card:hover .right-side, .card1:hover .right-side1, .card2:hover .right-side2 {
+  transform: rotateY(360deg);  
+}
+
+.card:hover .back-side, .card1:hover .back-side1, .card2:hover .back-side2 {
+  transform: translateZ(0);
+  z-index: 1;
+  box-shadow: 50px 50px 100px #000;
+}
+
+
+.sides {
+   display: flex;
+   flex-direction: column;
+   justify-content: center; 
+}
+
+.name1 {
+    color: #fff;
+    font-size: 35px;
+    /* margin: 20px 5px; */
+    
+}
+.bdcard1 {
+    color: #fff;
+    font-size: 25px;  
+   /* margin: 20px 5px; */
+ }
+
+ .name, .name2 {
+    color: #fff;
+    font-size: 20px;
+   /*  margin: 15px 5px; */
+    
+}
+ .bdcard, .bdcard2
+ {
+    color: #fff;
+    font-size: 20px;
+    /* margin: 15px 5px; */
+ }
+ 
+
+.left-side .name, 
+.left-side .bdcard, .left-side1 .name1, 
+.left-side1 .bdcard1, .left-side2 .name2, 
+.left-side2 .bdcard2 {
+    text-align: right;
+}
+
+
+.desc {
+    color: white;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+    /* margin-bottom: 10px; */
+}
+.desc1 {
+    color: #fff;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+    /* margin-bottom: 10px; */
+}
+ .desc2 {
+    color: #fff;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+    /* margin-bottom: 10px; */
+}
