@@ -19,13 +19,13 @@ body{
     margin-right: 123px;
     text-align: center;
     padding: 10px;
-    background-image: url('/Images/img/giphy.gif');
+    background-image: url('/Asha_Birthday_Celebration/Images/img/giphy.gif');
     height: 60px;
     
 }
 .text{
 text-align: center;
-background-image: url('/Images/img/giphy.gif');
+background-image: url('/Asha_Birthday_Celebration/Images/img/giphy.gif');
 height: 40px;
 background-size:contain;
 }
