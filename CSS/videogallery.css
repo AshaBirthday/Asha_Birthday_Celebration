@@ -14,13 +14,11 @@ body{
 .heading{
     color: white;
     font-size: 32px;
-    margin-top: 25px;
-    margin-left: 133px;
-    margin-right: 123px;
+    margin: 20px auto;
     text-align: center;
+    height: 70px;
     padding: 10px;
     background-image: url('/Asha_Birthday_Celebration/Images/img/giphy.gif');
-    height: 60px;
     
 }
 .text{
