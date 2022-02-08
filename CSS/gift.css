@@ -133,7 +133,6 @@ section{
 	 border-radius: 40px;
 	 backdrop-filter: blur(30px);
 	 transform-origin: right;
-	 background-color: blue;
 	 transform-style: preserve-3d;
 }
 .card.card_animated{
