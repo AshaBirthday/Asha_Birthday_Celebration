@@ -5,9 +5,9 @@ body{
 .cube{
     width: 300px;
     height: 200px;
-    margin-top: 100px ;
-    margin-bottom: 160px;
+    margin: 100px auto;
     perspective: 800px;
+    margin-bottom: 220px;
    
 }
 .box-area{
