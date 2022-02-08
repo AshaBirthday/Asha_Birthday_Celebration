@@ -7,7 +7,7 @@ body{
     background-color: white;
 }
 .gallery{
-	padding: 80px 0px;
+	padding: 60px 0px;
 	background-image: url(/Asha_Birthday_Celebration/Images/img/18.jpg);
 }
 img{
@@ -32,7 +32,7 @@ img{
 
 a.btn{
 	float:right;
-	margin:10px;
+	margin:5px;
 	border-radius: 8px;
 }
 a.btn:hover{
@@ -44,11 +44,12 @@ a:link, a:visited {
 	background-color:black;
 	color:white;
 	/*border: 1px solid green;*/
-	padding: 10px 20px;
+	padding: 4px 6px;
+	letter-spacing: 1px;
 	text-align: center;
 	text-decoration: none;
-	margin: 20px 20px;
-	margin-left: 50px;
+	margin: 16px 18px;
+	font-size: 12px;
 	display: inline-block;
 	border-radius: 5px;
   }
