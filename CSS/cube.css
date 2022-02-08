@@ -1,51 +1,52 @@
 body{
     background-image: url(/Asha_Birthday_Celebration/Images/img/17.gif);
-   /* background-size: contain; */
+    background-size: cover; 
 }
 .cube{
-    width: 400px;
-    height: 400px;
-    margin: 150px auto;
+    width: 300px;
+    height: 200px;
+    margin-top: 100px ;
+    margin-bottom: 160px;
     perspective: 800px;
    
 }
 .box-area{
-    width: 400px;
+    width: 300px;
     animation: animate 15s linear infinite;
     transform-style: preserve-3d;
 
 }
 .box-area img{
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
 }
 .box-area div{
     position: absolute;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
 }
 
 .side-one{
-    transform: translateZ(200px);
+    transform: translateZ(150px);
 }
 .side-two{
-    transform: rotateY(180deg) translateZ(200px);
+    transform: rotateY(180deg) translateZ(150px);
 }
 
 .side-three{
-    transform: rotateY(-90deg) translateX(-200px);
+    transform: rotateY(-90deg) translateX(-150px);
     transform-origin:left;
 }
 .side-four{
-    transform: rotateY(90deg) translateX(200px);
+    transform: rotateY(90deg) translateX(150px);
     transform-origin: right;
 }
 .side-five{
-    transform: rotateX(-90deg) translateY(-200px);
+    transform: rotateX(-90deg) translateY(-150px);
     transform-origin: top;
 }
 .side-six{
-    transform: rotateX(90deg) translateY(200px);
+    transform: rotateX(90deg) translateY(150px);
     transform-origin: bottom;
 }
 @keyframes animate{
