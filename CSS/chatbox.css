@@ -9,11 +9,37 @@
 	  font-weight: 400;
 	  line-height: 1.6;
 	  color: #333;
-	  background-color: #f12626;
+	  
   }
 
   body,html{
 	  scroll-behavior: smooth;
+  }
+  #back_vdo
+  {
+	  position: relative;
+  }
+  
+  #back_vdo video{
+	  height: 100vh;
+	  width: 100%;
+	  background-position:absolute;
+	  z-index:10;
+	  object-fit: cover;
+  }
+  
+  #back_vdo .content {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width:100%;
+  z-index:20;
+  position: absolute;
+  top:0px;
+  left:0px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
 
 /*ChatBot*/
@@ -29,10 +55,10 @@
 	
 }
 .chat_box{
-	width: 350px; /* 370px */
-	height: 55vh; /* 80vh */
+	width: 300px; /* 370px */
+	height: 60vh; /* 80vh */
 	position: absolute;
-	bottom: 65px;
+	bottom: 70px;
 	right: 30px;
 	background: rgb(204, 197, 197);
 	z-index: 1000;
